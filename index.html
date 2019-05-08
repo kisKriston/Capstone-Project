@@ -5,42 +5,50 @@
     <title>Colmar Academy</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700|Raleway:300,400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
   </head>
   <body>
     <!-- Header -->
     <header>
-      <div class="menu">
-        <a href="index.html" class="logo"><img src="./images/ic-logo.svg" alt="Colmar logo"><span class="colmar">COLMAR</span><span class="academy">ACADEMY</span></a>
-        <nav class="desktop">
-          <ul>
-            <li>
-              <a href="#campus"><span>On campus</span><img src="./images/ic-on-campus.svg" alt="desk icon"></a>
-            </li>
-            <li>
-              <a href="#online"><span>Online</span><img src="./images/ic-online.svg" alt="computer icon"></a>
-            </li>
-            <li>
-              <a href="#companies"><span>For companies</span></a>
-            </li>
-            <li>
-              <a href="#"><span>Sign in</span><img src="./images/ic-login.svg" alt="user icon"></a>
-            </li>
-          </ul>
-        </nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="./images/ic-logo.svg" alt="Colmar logo">
+          <span class="colmar">COLMAR</span>
+          <span class="academy">ACADEMY</span>
+        </a>
       </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#campus"><span>On campus</span><img src="./images/ic-on-campus.svg" alt="desk icon"></a>
+          </li>
+          <li>
+            <a href="#online"><span>Online</span><img src="./images/ic-online.svg" alt="computer icon"></a>
+          </li>
+          <li>
+            <a href="#companies"><span>For companies</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Sign in</span><img src="./images/ic-login.svg" alt="user icon"></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
 
       <!-- Banner section -->
-      <div class="start" id="start">
-        <div class="banner">
-          <img src="./images/banner.jpg" alt="female students reading outside"/>
-        </div>
-        <div>
-          <h1>Learn something new everyday</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#start" class="button">Start Here</a>
+      <div class="mydiv">
+        <div class="start" id="start">
+          <div class="banner">
+            <img src="./images/banner.jpg" alt="female students reading outside"/>
+          </div>
+          <div class="banner-text">
+            <h1>Learn something new everyday</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#start" class="button">Start Here</a>
+          </div>
         </div>
       </div>
 
@@ -101,101 +109,105 @@
       <!-- Courses section -->
       <div id="online">
         <h2>Start learning</h2>
-        <div class="subject">
-          <a href="#">
-            <img src="./images/course-software.jpg" alt="computer on desk">
-            <div class="details">
-              <h3>Software engineering</h3>
-              <h4>COURSES</h4>
-              <p>Web Development, Mobile Development, iOT, APIs</p>
-            </div>
-          </a>
-        </div>
+        <div class="courses">
+          <div class="subject">
+            <a href="#">
+              <img src="./images/course-software.jpg" alt="computer on desk">
+              <div class="details">
+                <h3>Software engineering</h3>
+                <h4>COURSES</h4>
+                <p>Web Development, Mobile Development, iOT, APIs</p>
+              </div>
+            </a>
+          </div>
 
-        <div class="subject">
-          <a href="#">
-            <img src="./images/course-computer-art.jpg" alt="hand holding phone">
-            <div class="details">
-              <h3>Computer art</h3>
-              <h4>COURSES</h4>
-              <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-            </div>
-          </a>
-        </div>
+          <div class="subject">
+            <a href="#">
+              <img src="./images/course-computer-art.jpg" alt="hand holding phone">
+              <div class="details">
+                <h3>Computer art</h3>
+                <h4>COURSES</h4>
+                <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+              </div>
+            </a>
+          </div>
 
-        <div class="subject">
-          <a href="#">
-            <img src="./images/course-design.jpg" alt="someone holds a camera">
-            <div class="details">
-              <h3>Design</h3>
-              <h4>COURSES</h4>
-              <p>User Experience Design, User Research, Visual Design</p>
-            </div>
-          </a>
-        </div>
+          <div class="subject">
+            <a href="#">
+              <img src="./images/course-design.jpg" alt="someone holds a camera">
+              <div class="details">
+                <h3>Design</h3>
+                <h4>COURSES</h4>
+                <p>User Experience Design, User Research, Visual Design</p>
+              </div>
+            </a>
+          </div>
 
-        <div class="subject">
-          <a href="#">
-            <img src="./images/course-data.jpg" alt="laptop on desk">
-            <div class="details">
-              <h3>Data</h3>
-              <h4>COURSES</h4>
-              <p>Data Science, Big Data, SQL, Data Visualization</p>
-            </div>
-          </a>
-        </div>
+          <div class="subject">
+            <a href="#">
+              <img src="./images/course-data.jpg" alt="laptop on desk">
+              <div class="details">
+                <h3>Data</h3>
+                <h4>COURSES</h4>
+                <p>Data Science, Big Data, SQL, Data Visualization</p>
+              </div>
+            </a>
+          </div>
 
-        <div class="subject">
-          <a href="#">
-            <img src="./images/course-business.jpg" alt="chessboard">
-            <div class="details">
-              <h3>Business</h3>
-              <h4>COURSES</h4>
-              <p>Product Development, Business Development, Startup</p>
-            </div>
-          </a>
-        </div>
+          <div class="subject">
+            <a href="#">
+              <img src="./images/course-business.jpg" alt="chessboard">
+              <div class="details">
+                <h3>Business</h3>
+                <h4>COURSES</h4>
+                <p>Product Development, Business Development, Startup</p>
+              </div>
+            </a>
+          </div>
 
-        <div class="subject">
-          <a href="#">
-            <img src="./images/course-marketing.jpg" alt="smart watch on wrist">
-            <div class="details">
-              <h3>Marketing</h3>
-              <h4>COURSES</h4>
-              <p>Analytics, Content Marketing, Mobile Marketing</p>
-            </div>
-          </a>
+          <div class="subject">
+            <a href="#">
+              <img src="./images/course-marketing.jpg" alt="smart watch on wrist">
+              <div class="details">
+                <h3>Marketing</h3>
+                <h4>COURSES</h4>
+                <p>Analytics, Content Marketing, Mobile Marketing</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- Thesis section -->
       <div id="companies">
         <h2>Thesis exhibit</h2>
-        <div class="thesis">
-          <div class="video">
-            <video src="./videos/thesis.mp4" controls>Your browser does not support this Video format</video>
-            <h3>Reimagine urban</h3>
-            <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-          </div>
-          <!-- Thesis Sidebar section -->
-          <div>
-            <div class="article">
-              <div class="image">
-                <img src="./images/thesis-fisma.jpg" alt="phone on papers">
-              </div>
-              <div class="title">
-                <h3>Fisma: Design and Prototype</h3>
-                <p>Designer showcase of new prototype product</p>
-              </div>
+        <div class="thesis-main">
+          <div class="thesis">
+            <div class="video">
+              <video src="./videos/thesis.mp4" controls>Your browser does not support this Video format</video>
+              <h3>Reimagine urban</h3>
+              <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
             </div>
-
-            <div class="article">
-              <div class="image">
-                <img src="./images/thesis-now-and-then.jpg" alt="Empire State Buidling">
+            <!-- Thesis Sidebar section -->
+            <div class="sidebar">
+              <div class="article">
+                <div class="image">
+                  <img src="./images/thesis-fisma.jpg" alt="phone on papers">
+                </div>
+                <div class="title">
+                  <h3>Fisma: Design and Prototype</h3>
+                  <p>Designer showcase of new prototype product</p>
+                </div>
               </div>
-              <div class="title">
-                <h3>Now and Then</h3>
-                <p>Research study about New York</p>
+
+              <div class="article">
+                <div class="image">
+                  <img src="./images/thesis-now-and-then.jpg" alt="Empire State Buidling">
+                </div>
+                <div class="title">
+                  <h3>Now and Then</h3>
+                  <p>Research study about New York</p>
+                </div>
               </div>
             </div>
           </div>
