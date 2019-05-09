@@ -11,6 +11,27 @@ main {
   margin-left: 10%;
 }
 
+@media only screen and (max-width: 1200px) {
+  main {
+    max-width: 90%;
+    margin-left: 5%;
+    transition: all 1s ease;
+  }
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  html {
+    font-size: 12px;
+  }
+}
+
 h1, h2, h3 {
   font-family: 'Impact', monospace;
   font-weight: 600;
@@ -32,6 +53,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+  font-weight: 500;
 }
 
 h4 {
@@ -101,15 +123,15 @@ nav a:hover {
 }
 
 /* Header media queries */
-@media only screen and (min-width: 771px) {
+@media only screen and (min-width: 801px) {
   nav img {display: none;}
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 800px) {
   nav span {
     display: none;
   }
-  nav li:nth-child(3n) {
+  nav li:nth-child(3n+1) {
     display: none;
   }
   nav li {
@@ -118,9 +140,17 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 480px) {
-  .colmar, .academy {
+  .logo {
     display: none;
   }
+  nav li:nth-child(5n+1) {
+    display: inline-flex;
+  }
+  nav ul, nav {
+    justify-content: space-around;
+    width: 100%;
+  }
+
 }
 
 /* Banner Section */
@@ -135,12 +165,12 @@ main {
   padding: 32px 24px;
 }
 
-.mydiv {
+.bgimg {
     position: relative;
     z-index: 1;
 }
 
-.mydiv:before {
+.bgimg:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -165,7 +195,7 @@ main {
 }
 
 .banner-text {
-  margin: 100px 40px 0 40px;
+  margin: 20px 40px 0 40px;
   width: 30%;
   display: flex;
   align-items: flex-start;
@@ -184,22 +214,46 @@ main {
 .button {
   width: 50%;
   border-radius: 10px;
-  background-color: darkgrey;
-  color: white;
+  background-color: #d4e2dc;
+  color: black;
   font-size: 1.2rem;
   padding: 1rem;
-  margin: 2rem 2rem 2rem 0rem;
+  margin: 0 2rem 2rem 0rem;
   text-align: center;
 }
 
 .button:hover {
   background-color: darkblue;
+  color: white;
   transition: all 0.5s ease 100ms;
 }
 
 /* Banner media queries */
 
-
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+  .start {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 2rem;
+  }
+  .banner {
+    width: 100%;
+    max-height: auto;
+    overflow: hidden;
+  }
+  .banner-text {
+    flex-flow: row wrap;
+    margin: 16px 0 0 0;
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+}
 
 /* Article Section */
 #campus {
@@ -270,6 +324,70 @@ main {
 }
 
 /* Article media queries */
+@media only screen and (max-width:1000px) {
+  #campus {
+    flex-flow: column;
+    padding: 2rem 0;
+  }
+  .main-article {
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+  .quote {
+    margin-left: 1rem;
+  }
+  .article {
+    border: none;
+  }
+  #campus .sidebar {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 1.5rem 0;
+    padding-top: 0;
+  }
+  #campus .article {
+    display: flex;
+    flex-direction: column;
+    max-width: 33%;
+    align-items: flex-start;
+  }
+  #campus .image {
+    padding: 1rem;
+    max-width: 100%;
+  }
+  #campus .title {
+    max-width: none;
+    margin: 0 0 1rem 2rem;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: initial;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main-article {
+    display: none;
+  }
+  #campus .sidebar {
+    flex-flow: column;
+    width: auto;
+    margin-top: 0;
+  }
+  #campus .article {
+    max-width: 100%;
+    margin: 0.5rem 0;
+  }
+  .mobile {
+    max-width: 100%;
+    width: 800px;
+  }
+}
 
 /* Courses Section */
 #online {
@@ -287,16 +405,17 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 0 72px 32px 72px;
+  margin: 0 32px 32px 32px;
 }
 
 .subject {
   display: flex;
   flex-flow: column nowrap;
-  max-width: 27%;
-  margin: 2rem;
+  max-width: 29%;
+  margin: 2rem 1rem;
   background-color: #ffffff;
-  border-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .subject a:hover {
@@ -313,6 +432,43 @@ main {
 }
 
 /* Courses media queries */
+
+@media only screen and (max-width: 800px) {
+  .subject {
+    max-width: 45%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #online h2 {
+    margin: 2rem auto;
+  }
+  #online {
+    padding-bottom: 1rem;
+  }
+  .courses {
+    flex-flow: column;
+    max-width: 100%;
+  }
+  .subject {
+    max-width: 90%;
+    margin: 0.5rem 5%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .subject a:hover {
+    border-top: none;
+    margin-bottom: 0;
+    border-right: solid 40px #d4e2dc;
+    padding-left: -40px;
+  }
+  .subject img, .subject h4, .subject p {
+    display: none;
+  }
+  #online h3 {
+    margin: 0;
+  }
+}
 
 /* Thesis Section */
 #companies {
@@ -346,6 +502,49 @@ video {
   margin-bottom: 2rem;
 }
 
+/* Thesis media queries */
+
+@media only screen and (max-width:1000px) {
+  .thesis {
+    flex-flow: column;
+  }
+  #companies .article {
+    flex-flow: row;
+    padding: 0;
+    max-height: 15rem;
+  }
+  #companies .sidebar {
+    display: flex;
+    flex-flow: row;
+    max-width: 100%;
+    margin: 0 2rem 0 2rem;
+  }
+  #companies .image {
+    padding: 1rem;
+    max-width: 30%;
+  }
+  .video {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #companies .sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #companies .sidebar, #companies h3, #companies p {
+    display: none;
+  }
+  .video {
+    margin: 2rem 0;
+    transition: margin 1s ease;
+  }
+}
+
+
 /* Footer Section */
 footer {
   margin: 0;
@@ -363,6 +562,20 @@ footer {
 
 .terms a:hover {
   color: #1da7a4;
+}
+
+/* Footer media query */
+@media only screen and (max-width: 650px) {
+  footer {
+    justify-content: center;
+    height: 3rem;
+    font-size: 0.85rem;
+    border-top: none;
+    padding-top: 0;
+  }
+  .terms {
+    display: none;
+  }
 }
 
 /* Signature */
