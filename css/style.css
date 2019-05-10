@@ -418,12 +418,16 @@ main {
   border-bottom-right-radius: 20px;
 }
 
-.subject a:hover {
+.subject:hover {
+  transform: scale(1.1);
+}
+
+/*.subject a:hover {
   border-bottom: solid 15px white;
   margin-top: -15px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-}
+}*/
 
 .subject img {
   width: 100%;
