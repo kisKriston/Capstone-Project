@@ -419,8 +419,10 @@ main {
 }
 
 .subject a:hover {
-  border-top: solid 15px #d4e2dc;
-  margin-bottom: -15px;
+  border-bottom: solid 15px white;
+  margin-top: -15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .subject img {
