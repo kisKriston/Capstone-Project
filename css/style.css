@@ -334,10 +334,6 @@ main {
   text-decoration: none;
 }
 
-.title a:visited {
-  color: purple;
-}
-
 .title a:hover {
   color: #1da7a4;
   text-decoration: underline;
