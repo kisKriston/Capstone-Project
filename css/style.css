@@ -34,6 +34,7 @@ main {
 
 h1, h2, h3 {
   font-family: 'Impact', monospace;
+  /*font-family: 'Rubik', sans-serif;*/
   font-weight: 600;
   line-height: 1.25;
 }
@@ -42,12 +43,13 @@ h1 {
   font-size: 3rem;
   margin-bottom: 3rem;
   line-height: 3rem;
-  color: #000;
+  color: #342817;
 }
 
 h2 {
   font-size: 1.75rem;
   margin: 1.5rem 0;
+  letter-spacing: 1px;
 }
 
 h3 {
@@ -85,6 +87,11 @@ header {
 .logo a {
   display: flex;
   align-items: center;
+}
+
+.logo:hover {
+  transform: scale(1.25);
+  transition: 1s ease;
 }
 
 .logo a img {
@@ -203,29 +210,32 @@ main {
 }
 
 .banner-text p {
-  font-family: 'Sofia', cursive;
-  font-size: 1.4rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   margin-top: -2rem;
   line-height: 2rem;
   color: #101010;
+  letter-spacing: 2.6px;
 }
 
 .button {
   width: 50%;
   border-radius: 10px;
   background-color: #d4e2dc;
+  /*background-color: #4c5b61;*/
   color: black;
   font-size: 1.2rem;
   padding: 1rem;
   margin: 0 2rem 2rem 0rem;
   text-align: center;
+  font-family: 'Impact', monospace;
 }
 
 .button:hover {
   background-color: darkblue;
   color: white;
-  transition: all 0.5s ease 100ms;
+  transition: all 0.75s ease 100ms;
 }
 
 /* Banner media queries */
@@ -259,6 +269,11 @@ main {
 #campus {
   display: flex;
   max-width: 1600px;
+}
+
+#online h2, #companies h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .main-article {
@@ -312,6 +327,15 @@ main {
 .article .title {
   width: 65%;
   padding-right: 2rem;
+}
+
+.title a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.title a:visited {
+  color: purple;
 }
 
 .title a:hover {
@@ -423,13 +447,6 @@ main {
   transition: 1s ease;
 }
 
-/*.subject a:hover {
-  border-bottom: solid 15px white;
-  margin-top: -15px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}*/
-
 .subject img {
   width: 100%;
 }
@@ -462,12 +479,6 @@ main {
     margin: 0.5rem 5%;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-  }
-  .subject a:hover {
-    border-top: none;
-    margin-bottom: 0;
-    border-right: solid 40px #d4e2dc;
-    padding-left: -40px;
   }
   .subject img, .subject h4, .subject p {
     display: none;
@@ -588,10 +599,10 @@ footer {
 /* Signature */
 .signature {
   text-align: right;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   padding-right: 2em;
   font-size: 12px;
   line-height: 16px;
-  border-top: 1px solid black;
+  border-top: 1px solid #9aa7a4;
 }
